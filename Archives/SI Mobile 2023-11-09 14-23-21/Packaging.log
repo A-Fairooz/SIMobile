@@ -1,0 +1,135 @@
+2023-11-09 14:23:17 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7f927342fbe0; archive(resolved)="<IDEArchive: 0x60005995d1a0>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	Chain (15, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7f927342fbe0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x7f9272982610; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f927342e7b0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f9279b118e0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f927683e1c0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f928146da10; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f9273d508a0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f9273d53ab0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f9273d62530; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x60002ac92b40; teamID='M79ZK46LGY', teamName='Abdulla Fairooz', teamType='Individual', username='abdulladev@outlook.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7f92768463d0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="(null)">
+	<IDEDistributionContext: 0x7f9274eaf120; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="(null)">
+	<IDEDistributionContext: 0x7f927297fd60; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="(null)">
+	<IDEDistributionContext: 0x7f9279b34c70; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x60006f178670>", team="(null)">
+	<IDEDistributionContext: 0x7f92768425f0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x7f927684bca0; archive = "<IDEArchive: 0x60005995d1a0>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x7f927342fbe0>
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionCreateDestRootStep
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionCopyItemStep
+2023-11-09 14:23:17 +0000  Running /usr/bin/ditto '-V' '/Users/abdulla-f/Library/Developer/Xcode/Archives/2023-11-09/SI Mobile 09-11-2023, 14.22.xcarchive/Products/Applications/SI Mobile.app' '/var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root/Payload/SI Mobile.app'
+2023-11-09 14:23:17 +0000  >>> Copying /Users/abdulla-f/Library/Developer/Xcode/Archives/2023-11-09/SI Mobile 09-11-2023, 14.22.xcarchive/Products/Applications/SI Mobile.app 
+2023-11-09 14:23:17 +0000  copying file ./_CodeSignature/CodeResources ... 
+2023-11-09 14:23:17 +0000  3545 bytes for ./_CodeSignature/CodeResources
+2023-11-09 14:23:17 +0000  copying file ./AppIcon60x60@2x.png ... 
+2023-11-09 14:23:17 +0000  6516 bytes for ./AppIcon60x60@2x.png
+2023-11-09 14:23:17 +0000  copying file ./GoogleService-Info.plist ... 
+2023-11-09 14:23:17 +0000  686 bytes for ./GoogleService-Info.plist
+2023-11-09 14:23:17 +0000  copying file ./CodeScanner_CodeScanner.bundle/Assets.car ... 
+2023-11-09 14:23:17 +0000  54271 bytes for ./CodeScanner_CodeScanner.bundle/Assets.car
+2023-11-09 14:23:17 +0000  copying file ./CodeScanner_CodeScanner.bundle/Info.plist ... 
+2023-11-09 14:23:17 +0000  692 bytes for ./CodeScanner_CodeScanner.bundle/Info.plist
+2023-11-09 14:23:17 +0000  copying file ./Assets.car ... 
+2023-11-09 14:23:17 +0000  1501248 bytes for ./Assets.car
+2023-11-09 14:23:17 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2023-11-09 14:23:17 +0000  8090 bytes for ./AppIcon76x76@2x~ipad.png
+2023-11-09 14:23:17 +0000  copying file ./SI Mobile ... 
+2023-11-09 14:23:17 +0000  2316976 bytes for ./SI Mobile
+copying file ./embedded.mobileprovision ... 
+2023-11-09 14:23:17 +0000  12600 bytes for ./embedded.mobileprovision
+copying file ./Info.plist ... 
+1539 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+2023-11-09 14:23:17 +0000  8 bytes for ./PkgInfo
+2023-11-09 14:23:17 +0000  /usr/bin/ditto exited with 0
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionEmbedProfileStep
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionInfoPlistStep
+2023-11-09 14:23:17 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2023-11-09 14:23:17 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2023-11-09 14:23:17 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2023-11-09 14:23:17 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionSymbolsStep
+2023-11-09 14:23:17 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionAppThinningStep
+2023-11-09 14:23:17 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionArchThinningStep
+2023-11-09 14:23:17 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root/Payload/SI Mobile.app/SI Mobile' '-verify_arch' 'arm64e'
+2023-11-09 14:23:17 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-11-09 14:23:17 +0000  Skipping architecture thinning for item "SI Mobile" because arch "arm64e" wasn't found
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionODRStep
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionStripXattrsStep
+2023-11-09 14:23:17 +0000  Running /usr/bin/xattr '-crs' '/var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root/Payload/SI Mobile.app'
+2023-11-09 14:23:17 +0000  /usr/bin/xattr exited with 0
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionCodesignStep
+2023-11-09 14:23:17 +0000  Entitlements for <IDEDistributionItem: 0x60005991dce0; bundleID='com.companyname.SIMobileiOS', path='<DVTFilePath:0x6000158b5260:'/Users/abdulla-f/Library/Developer/Xcode/Archives/2023-11-09/SI Mobile 09-11-2023, 14.22.xcarchive/Products/Applications/SI Mobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000b10e4fa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60001060dd40; name='iPhone Distribution: Abdulla Fairooz (M79ZK46LGY)', hash='622D39A53981C728075A9C6456C0450CF3CF1DC3', serialNumber='51ADCA7997EA4871F86CDE3F3772D3BD', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2023-11-09 13:23:12 +0000''>', entitlements='{
+    "application-identifier" = "M79ZK46LGY.com.companyname.SIMobileiOS";
+    "com.apple.developer.team-identifier" = M79ZK46LGY;
+    "get-task-allow" = 0;
+}', teamID='M79ZK46LGY', identifier='com.companyname.SIMobileiOS', executablePath='<DVTFilePath:0x60001589a220:'/Users/abdulla-f/Library/Developer/Xcode/Archives/2023-11-09/SI Mobile 09-11-2023, 14.22.xcarchive/Products/Applications/SI Mobile.app/SI Mobile'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "M79ZK46LGY.com.companyname.SIMobileiOS";
+    "com.apple.developer.team-identifier" = M79ZK46LGY;
+    "get-task-allow" = 0;
+}
+2023-11-09 14:23:17 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2023-11-09 14:23:17 +0000  Entitlements for <IDEDistributionItem: 0x60005991dce0; bundleID='com.companyname.SIMobileiOS', path='<DVTFilePath:0x6000158b5260:'/Users/abdulla-f/Library/Developer/Xcode/Archives/2023-11-09/SI Mobile 09-11-2023, 14.22.xcarchive/Products/Applications/SI Mobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000b10e4fa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60001060a940; name='iPhone Distribution: Abdulla Fairooz (M79ZK46LGY)', hash='622D39A53981C728075A9C6456C0450CF3CF1DC3', serialNumber='51ADCA7997EA4871F86CDE3F3772D3BD', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2023-11-09 13:23:12 +0000''>', entitlements='{
+    "application-identifier" = "M79ZK46LGY.com.companyname.SIMobileiOS";
+    "com.apple.developer.team-identifier" = M79ZK46LGY;
+    "get-task-allow" = 0;
+}', teamID='M79ZK46LGY', identifier='com.companyname.SIMobileiOS', executablePath='<DVTFilePath:0x60001589a220:'/Users/abdulla-f/Library/Developer/Xcode/Archives/2023-11-09/SI Mobile 09-11-2023, 14.22.xcarchive/Products/Applications/SI Mobile.app/SI Mobile'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "M79ZK46LGY.com.companyname.SIMobileiOS";
+    "com.apple.developer.team-identifier" = M79ZK46LGY;
+    "get-task-allow" = 0;
+}
+2023-11-09 14:23:17 +0000  Writing entitlements for <IDEDistributionItem: 0x60005991dce0; bundleID='com.companyname.SIMobileiOS', path='<DVTFilePath:0x6000158b5260:'/Users/abdulla-f/Library/Developer/Xcode/Archives/2023-11-09/SI Mobile 09-11-2023, 14.22.xcarchive/Products/Applications/SI Mobile.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000b10e4fa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600010604240; name='iPhone Distribution: Abdulla Fairooz (M79ZK46LGY)', hash='622D39A53981C728075A9C6456C0450CF3CF1DC3', serialNumber='51ADCA7997EA4871F86CDE3F3772D3BD', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2023-11-09 13:23:12 +0000''>', entitlements='{
+    "application-identifier" = "M79ZK46LGY.com.companyname.SIMobileiOS";
+    "com.apple.developer.team-identifier" = M79ZK46LGY;
+    "get-task-allow" = 0;
+}', teamID='M79ZK46LGY', identifier='com.companyname.SIMobileiOS', executablePath='<DVTFilePath:0x60001589a220:'/Users/abdulla-f/Library/Developer/Xcode/Archives/2023-11-09/SI Mobile 09-11-2023, 14.22.xcarchive/Products/Applications/SI Mobile.app/SI Mobile'>', hardenedRuntime='0'>'> to: /var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/entitlements~~~yP1rMP
+2023-11-09 14:23:17 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '622D39A53981C728075A9C6456C0450CF3CF1DC3' '--entitlements' '/var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/entitlements~~~yP1rMP' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root/Payload/SI Mobile.app'
+2023-11-09 14:23:17 +0000  /var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root/Payload/SI Mobile.app: replacing existing signature
+2023-11-09 14:23:17 +0000  /var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root/Payload/SI Mobile.app: signed app bundle with Mach-O thin (arm64) [com.companyname.SIMobileiOS]
+2023-11-09 14:23:17 +0000  /usr/bin/codesign exited with 0
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionZipODRItemStep
+2023-11-09 14:23:17 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionCreateIPAStep
+2023-11-09 14:23:17 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root' '/var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Packages/SI Mobile.ipa'
+2023-11-09 14:23:17 +0000  >>> Copying /var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root 
+2023-11-09 14:23:17 +0000  copying file ./Payload/SI Mobile.app/_CodeSignature/CodeResources ... 
+2023-11-09 14:23:17 +0000  3545 bytes for ./Payload/SI Mobile.app/_CodeSignature/CodeResources
+copying file ./Payload/SI Mobile.app/AppIcon60x60@2x.png ... 
+2023-11-09 14:23:17 +0000  6516 bytes for ./Payload/SI Mobile.app/AppIcon60x60@2x.png
+copying file ./Payload/SI Mobile.app/GoogleService-Info.plist ... 
+2023-11-09 14:23:17 +0000  686 bytes for ./Payload/SI Mobile.app/GoogleService-Info.plist
+2023-11-09 14:23:17 +0000  copying file ./Payload/SI Mobile.app/CodeScanner_CodeScanner.bundle/Assets.car ... 
+2023-11-09 14:23:17 +0000  54271 bytes for ./Payload/SI Mobile.app/CodeScanner_CodeScanner.bundle/Assets.car
+copying file ./Payload/SI Mobile.app/CodeScanner_CodeScanner.bundle/Info.plist ... 
+2023-11-09 14:23:17 +0000  692 bytes for ./Payload/SI Mobile.app/CodeScanner_CodeScanner.bundle/Info.plist
+2023-11-09 14:23:17 +0000  copying file ./Payload/SI Mobile.app/Assets.car ... 
+2023-11-09 14:23:17 +0000  1501248 bytes for ./Payload/SI Mobile.app/Assets.car
+copying file ./Payload/SI Mobile.app/AppIcon76x76@2x~ipad.png ... 
+2023-11-09 14:23:17 +0000  8090 bytes for ./Payload/SI Mobile.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/SI Mobile.app/SI Mobile ... 
+2023-11-09 14:23:17 +0000  2316976 bytes for ./Payload/SI Mobile.app/SI Mobile
+copying file ./Payload/SI Mobile.app/embedded.mobileprovision ... 
+2023-11-09 14:23:17 +0000  12600 bytes for ./Payload/SI Mobile.app/embedded.mobileprovision
+2023-11-09 14:23:17 +0000  copying file ./Payload/SI Mobile.app/Info.plist ... 
+2023-11-09 14:23:17 +0000  1539 bytes for ./Payload/SI Mobile.app/Info.plist
+2023-11-09 14:23:17 +0000  copying file ./Payload/SI Mobile.app/PkgInfo ... 
+2023-11-09 14:23:17 +0000  8 bytes for ./Payload/SI Mobile.app/PkgInfo
+2023-11-09 14:23:17 +0000  /usr/bin/ditto exited with 0
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2023-11-09 14:23:17 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2023-11-09 14:23:17 +0000  IDEDistributionItem init <DVTFilePath:0x60001582b790:'/var/folders/3w/lfg59btd0w92j7hgqr4zcp3w0000gn/T/XcodeDistPipeline.~~~9Hdjvn/Root/Payload/SI Mobile.app'>
+2023-11-09 14:23:17 +0000  Processing step: IDEDistributionCreateManifestStep

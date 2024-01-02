@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SI Mobile.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>622D39A53981C728075A9C6456C0450CF3CF1DC3</string>
+				<key>dateExpires</key>
+				<string>08/11/2024</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>M79ZK46LGY.com.companyname.SIMobileiOS</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>M79ZK46LGY</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>SI Mobile.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>b737ba36-10b9-4a24-8f4a-286aa5bdcfd4</string>
+				<key>dateExpires</key>
+				<string>08/11/2024</string>
+				<key>name</key>
+				<string>SI Mobile iOS PP</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>M79ZK46LGY</string>
+				<key>name</key>
+				<string>Abdulla Fairooz</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
