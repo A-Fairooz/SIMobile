@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compileBitcode</key>
+	<false/>
+	<key>destination</key>
+	<string>export</string>
+	<key>manifest</key>
+	<dict>
+		<key>appURL</key>
+		<string>https://a-fairooz.github.io/simobileios-page/SI%20Mobile.ipa</string>
+		<key>displayImageURL</key>
+		<string>https://a-fairooz.github.io/simobileios-page/silogo57.png</string>
+		<key>fullSizeImageURL</key>
+		<string>https://a-fairooz.github.io/simobileios-page/silogo512.png</string>
+	</dict>
+	<key>method</key>
+	<string>ad-hoc</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.companyname.SIMobileiOS</key>
+		<string>SI Mobile iOS PP</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>622D39A53981C728075A9C6456C0450CF3CF1DC3</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>M79ZK46LGY</string>
+	<key>thinning</key>
+	<string>&lt;none&gt;</string>
+</dict>
+</plist>

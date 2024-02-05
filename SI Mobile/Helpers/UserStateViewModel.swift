@@ -34,6 +34,13 @@ class UserStateViewModel: ObservableObject {
         }
     }
     
+    func loginStillValid() -> Bool{
+        
+        
+        
+        return true
+    }
+    
     func loggedIn() -> Bool{
         let stillLoggedIn = UserDefaults.standard.bool(forKey: "loggedIn")
         if !stillLoggedIn { return false }
@@ -52,62 +59,7 @@ class UserStateViewModel: ObservableObject {
         }
     }
     
-//    func firebaseLogin(email: String, password: String) async -> String {
-//        isLoading = true
-//
-//        do {
-//            try await Auth.auth().signIn(withEmail: email, password: password)
-//            isLoading = false
-//            isLoggedIn = true
-//            UserDefaults.standard.set(true, forKey: "loggedIn")
-//            setLastLogin()
-//            return "OK"
-//
-//        } catch {
-//            isLoading = false
-//            errorMessage = error.localizedDescription
-//            return errorMessage
-//        }
-//
-//    }
-    
-//    func firebaseLogout() async {
-//        isLoading = true
-//        hasError = false
-//        do {
-//            try Auth.auth().signOut()
-//            isLoading = false
-//            UserDefaults.standard.set(false, forKey: "loggedIn")
-//            isLoggedIn = false
-//        } catch {
-//            hasError = true
-//            errorMessage = error.localizedDescription
-//            isLoading = false
-//        }
-//    }
-//
-//    func resetPassword(email: String, completion: @escaping (Bool) -> Void) async {
-//        if email.isEmpty {
-//            resetState = true
-//            resetMessage = "No Email Provided"
-//            completion(false)
-//        }
-//        isLoading = true
-//        resetState = false
-//        do {
-//            try await Auth.auth().sendPasswordReset(withEmail: email)
-//            isLoading = false
-//            resetState = true
-//            resetMessage = "If the account exists, password reset instructions will be sent to the email provided"
-//            completion(true)
-//        } catch {
-//            resetMessage = error.localizedDescription
-//            resetState = true
-//            isLoading = false
-//            completion(false)
-//        }
-//    }
-    
+
     func getUser() -> Firebase.User! {
         Auth.auth().currentUser
     }
@@ -123,21 +75,7 @@ class UserStateViewModel: ObservableObject {
             }
         }
     }
-    //
-    //    func lastReauthTime() -> Int {
-    //        let u = Auth.auth().currentUser
-    //
-    //        if u == nil {
-    //            return 9999
-    //        }
-    //
-    //        let date1 = u!.metadata.lastSignInDate!
-    //        let date2 = Date()
-    //        let diffs = Calendar.current.dateComponents([.minute], from: date1, to: date2)
-    //
-    //        return diffs.minute!
-    //    }
-    
+        
         func changeEmail(newEmail: String, completion: @escaping (String) -> Void) {
             let u = getUser()
             u?.updateEmail(to: newEmail) { error in
@@ -165,21 +103,7 @@ class UserStateViewModel: ObservableObject {
                 }
             }
         }
-    
-    //    func sendValidationEmail(completion: @escaping (String) -> Void) {
-    //        let u = getUser()
-    //        if u != nil, !u!.isEmailVerified {
-    //            u?.sendEmailVerification { error in
-    //                if error != nil {
-    //                    completion(error!.localizedDescription)
-    //                } else {
-    //                    completion("Please check your inbox for the verification link")
-    //                }
-    //            }
-    //        } else if u!.isEmailVerified {
-    //            completion("Email is already verified!x")
-    //        }
-    //    }
+        
 }
 
 func setLastLogin() {

@@ -17,9 +17,13 @@ struct BERTParam: View {
         }
     }
 }
+//
+//#Preview{
+//    BERTParam(text:"Test",placeholder: "Placeholder", value:.constant("Value"))
+//}
 
 struct BERTParam_Previews: PreviewProvider {
     static var previews: some View {
-        BERTParam(text:"Test",placeholder: "Placeholder", value:.constant("Value"))
+       BERTParam(text:"Test",placeholder: "Placeholder", value:.constant("Value"))
     }
 }

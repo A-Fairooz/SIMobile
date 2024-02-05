@@ -12,6 +12,8 @@ struct LoginView: View {
     @State private var resetActive = false
     @State private var rememberMe = false
     @State private var vis = false
+    @State private var updateText = ""
+    @State private var updateAlert = false
     
     var body: some View {
         LoadingView(isShowing: $auth.isLoading){
@@ -48,7 +50,25 @@ struct LoginView: View {
                 if rememberMe{
                     email = UserDefaults.standard.string(forKey: "storedEmail") ?? ""
                 }
+                
+                API().checkForUpdate(){ result in
+                    if result != "Up To Date" && !result.lowercased().contains("error"){
+                        updateText = result
+                        updateAlert = true
+                    }
+                    else{
+                        updateText = ""
+                        updateAlert = false
+                    }
+                    
+                    
+                }
             }
+            .alert("Update", isPresented: $updateAlert, actions: {
+                let updateUrl = URL(string: API().updateUrl)
+                Button("Update", action:{UIApplication.shared.open(updateUrl!)})
+                Button("Cancel", role:.cancel, action:{})
+            }) {Text(updateText)}
         }
     }
     func login() async{

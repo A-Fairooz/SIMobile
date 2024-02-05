@@ -15,6 +15,7 @@ public class Util: ObservableObject{
     @Published var bertEndToday = true
     @Published var saveBERT = true
     @Published var cMode = false
+  
     
     init(loading: Bool = false, bertUPC: String = "", bertSearch: Bool = false, showAlert: Bool = false, alertText: String = "", viewIndex: Int = 2) {
         self.loading = loading
@@ -28,6 +29,7 @@ public class Util: ObservableObject{
         self.bertEndToday = GetBoolVal("bertEndToday")
         self.saveBERT = GetBoolVal("saveBERT")
         self.cMode = GetBoolVal("cMode")
+    
     }
     
 

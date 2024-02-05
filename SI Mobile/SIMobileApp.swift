@@ -8,17 +8,32 @@
 import SwiftUI
 import Firebase
 
+
+class AppDelegate: NSObject, UIApplicationDelegate{
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool{
+        FirebaseApp.configure()
+        return true
+    }
+}
+
+
 @main
 struct SIMobileApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject private var util: Util
     @StateObject private var auth: UserStateViewModel
+    
+    
+    
     
     @State var updateText = ""
     @State var updateAlert = false
     
   
     init(){
-        FirebaseApp.configure()
+        //FirebaseApp.configure()
         _util = StateObject(wrappedValue: Util())
         _auth = StateObject(wrappedValue: UserStateViewModel())
      }

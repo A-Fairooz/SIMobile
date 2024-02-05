@@ -9,6 +9,8 @@ class API: ObservableObject {
     let token = "ab182644-02df-42bc-b8b7-6c78f5246aa9"
     let bertUrl = "https://bert.scentglobal.com:8031"
     let apiUrl = "https://api.scentglobal.com"
+    let pListLink = "https://A-Fairooz.github.io/simobileios-page/manifest.plist"
+    let updateUrl = "itms-services://?action=download-manifest&url=https://A-Fairooz.github.io/simobileios-page/manifest.plist"
     
     func fetchData(req: BERTRequestItem, completion: @escaping ([BERTItem]) -> Void) {
         let data = req
@@ -43,16 +45,79 @@ class API: ObservableObject {
         }.resume()
     }
     
-    func getStock(_ sku: String, completion: @escaping ([StockItem]) -> Void){
-        var l = StockItem.sampleList
-        var output = [StockItem]()
-        for i in l{
-            
-        }
+    func getBERTOffers(_ req: BERTRequestItem, completion: @escaping ([BERTItem]) -> Void){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyyMMdd"
         
-        DispatchQueue.main.async{
-            completion(l)
-        }
+        let baseUrl = "\(apiUrl)/api/products/GetBERTOffers?"
+        let queryString = "dStart=\(dateFormatter.string(from: req.StartDate))" +
+        "&dEnd=\(dateFormatter.string(from: req.EndDate))" +
+        "&searchTerm=\(req.SearchTerm)" +
+        "&barcode=\(req.Barcode.trimmingCharacters(in: .whitespaces))" +
+        "&supplier=\(req.Supplier)" +
+        "&exchangeRateEur=\(req.EURRate)" +
+        "&exchangeRateUsd=\(req.USDRate)" +
+        "&LandedCostPercentage=\(req.LandedCostPercent)"
+        
+        let endpointUrl = "\(baseUrl)\(queryString)"
+        
+        let sessionConfig = URLSessionConfiguration.default
+        sessionConfig.timeoutIntervalForRequest = 15.0
+        sessionConfig.timeoutIntervalForResource = 60.0
+        
+        let session = URLSession(configuration: sessionConfig)
+        
+        var request = URLRequest(url:URL(string:endpointUrl)!)
+        request.httpMethod = "GET"
+        request.setValue(token, forHTTPHeaderField: "Authorization")
+        
+        session.dataTask(with:request) {data,_,_ in
+            if data != nil{
+                let jsonDecoder = JSONDecoder()
+                let results = try? jsonDecoder.decode([BERTItem].self, from: data!)
+                
+                DispatchQueue.main.async{
+                    completion(results ?? [BERTItem]())
+                }
+            }
+            else{
+                completion([BERTItem]())
+            }
+        }.resume()
+        
+    }
+        
+    
+    func getProductStock(_ sku: String, completion: @escaping ([StockItem]) -> Void){
+        let url = "\(apiUrl)/api/products/GetProductStock?sku=\(sku)"
+        guard let url = URL(string: url) else {fatalError("Missing URL")}
+        
+        let sessionConfig = URLSessionConfiguration.default
+        sessionConfig.timeoutIntervalForRequest = 15.0
+        sessionConfig.timeoutIntervalForResource = 30.0
+        let session = URLSession(configuration: sessionConfig)
+        
+        var request = URLRequest(url:url)
+        request.httpMethod = "GET"
+        request.setValue(token, forHTTPHeaderField: "Authorization")
+        
+        session.dataTask(with:request){data, _, _ in
+            if data != nil{
+                
+                let jsonDecoder = JSONDecoder()
+              
+                let results = try? jsonDecoder.decode([StockItem].self, from: data!)
+                
+                DispatchQueue.main.async{
+                    completion(results ?? [StockItem]())
+                }
+            }
+            else{
+                DispatchQueue.main.async{
+                    completion([StockItem]())
+                }
+            }
+        }.resume()
     }
     
     func getZProductByUPC(upc: String, completion: @escaping (ZPRODUCT) -> Void) {
@@ -72,14 +137,14 @@ class API: ObservableObject {
         session.dataTask(with: request) { data, _, _ in
             
             if data != nil {
-                print("valid data")
+                
                 let results = try? JSONDecoder().decode(ZPRODUCT.self, from: data!)
                 
                 DispatchQueue.main.async {
                     completion(results ?? ZPRODUCT())
                 }
             } else {
-                print("invalid data")
+                
                 DispatchQueue.main.async {
                     completion(ZPRODUCT())
                 }
@@ -224,9 +289,8 @@ class API: ObservableObject {
             if data != nil {
                 print("valid data")
                 let results = String(decoding:data!, as: UTF8.self)//try? JSONDecoder().decode(String.self, from: data!)
-                print(results)
                 DispatchQueue.main.async {
-                    completion(results ?? "")
+                    completion(results.isEmpty ? "" : results)
                 }
             } else {
                 print("invalid data")
@@ -312,7 +376,7 @@ class API: ObservableObject {
         let localVersion = nsObject as! String
         var remoteVersion = ""
         //TODO Possibly change repository URL
-        guard let url = URL(string: "https://a-fairooz.github.io/sgmobileios-page/manifest.plist") else { fatalError("Missing URL") }
+        guard let url = URL(string: pListLink) else { fatalError("Missing URL") }
         let seshConfig = URLSessionConfiguration.default
         seshConfig.timeoutIntervalForRequest = 30.0
         seshConfig.timeoutIntervalForResource = 30.0
@@ -338,31 +402,7 @@ class API: ObservableObject {
         }.resume()
     }
     
-    func getPList(completion: @escaping (String) -> Void) {
-        print("getting plist")
-        //TODO Possibly change repository URL
-        guard let url = URL(string: "https://a-fairooz.github.io/sgmobileios-page/manifest.plist") else { fatalError("Missing URL") }
-        let seshConfig = URLSessionConfiguration.default
-        seshConfig.timeoutIntervalForRequest = 30.0
-        seshConfig.timeoutIntervalForResource = 30.0
-        let session = URLSession(configuration: seshConfig)
-        session.dataTask(with: url) { data, _, _ in
-            if data != nil {
-                let result = NSDictionary(contentsOf: url) as? [String: AnyObject]
-                DispatchQueue.main.async {
-                    let a1 = (result!["items"] as! [Any])[0]
-                    let a2 = (a1 as! [String: AnyObject])["metadata"]
-                    let a3 = (a2 as! [String: AnyObject])
-                    let version = a3["bundle-version"]!
-                    completion(String(describing: version))
-                }
-            } else {
-                DispatchQueue.main.async {
-                    completion("Error")
-                }
-            }
-        }.resume()
-    }
+  
 }
 
 

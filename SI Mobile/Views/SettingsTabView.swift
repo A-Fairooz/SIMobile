@@ -19,6 +19,7 @@ struct SettingsTabView: View {
                 
                 SISetting("Customer Mode", AnyView(Toggle("",isOn:$util.cMode).onChange(of: util.cMode){_ in updateSettings()}))
                 
+                
                 HStack{
                     Spacer()
                     SIButton(action:{confirmLogout = true}, text:"Logout")

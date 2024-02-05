@@ -160,7 +160,7 @@ struct BERTTabView: View {
             return
         }
         util.loading = true
-        API().fetchData(req: request){data in
+        API().getBERTOffers(request){data in
             offerList = data
             viewableList = offerList
             util.loading = false
